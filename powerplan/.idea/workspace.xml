@@ -5,24 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0591f955-10f1-4aa7-83b3-546e7a0db8f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/elements/dashboard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/elements/plans.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/settings/reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/planReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Notifications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SignedOutLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedOutLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/PlanList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/PlanSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/Navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/form.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/auth" />
       <recent name="$PROJECT_DIR$/src/scss/elements" />
       <recent name="$PROJECT_DIR$/src/Views/AppRoot" />
       <recent name="$PROJECT_DIR$/src/scss" />
@@ -67,7 +64,7 @@
       <updated>1597738907451</updated>
       <workItem from="1597738908689" duration="17648000" />
       <workItem from="1597759165411" duration="4527000" />
-      <workItem from="1597764808989" duration="8945000" />
+      <workItem from="1597764808989" duration="13730000" />
     </task>
     <servers />
   </component>

@@ -2,14 +2,14 @@ import React from 'react';
 import PlanSummary from "./PlanSummary";
 
 
-const PlanList = () => {
+const PlanList = ({plans}) => {
     return (
         <div className="planList">
-
-            <PlanSummary/>
-            <PlanSummary/>
-            <PlanSummary/>
-
+            { plans && plans.map(plan => {
+                return (
+                    <PlanSummary plan={plan} key={plan.id} />
+                )
+            })}
         </div>
     )
 }

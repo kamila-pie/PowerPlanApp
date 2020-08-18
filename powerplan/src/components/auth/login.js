@@ -31,7 +31,7 @@ class Login extends Component {
                         <Input type={'password'} id={'password'} onChange={this.handleChange}  placeholder={'password'}/>
                     </FormGroup>
                     <Button>LOGIN</Button>
-                    <div>or continue with your social account</div>
+                    <div className={'continue'}>or continue with your social account</div>
                     <FacebookLoginButton/>
                     <GoogleLoginButton/>
                     <div>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Login from "./components/login";
+import Login from "./components/auth/login";
 import Navbar from "./components/layout/Navbar";
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import './scss/main.scss';
 import Dashboard from "./components/dashboard/Dashboard";
 import PlanDetalis from "./components/plans/PlanDetails";
-import Register from "./components/register";
+import Register from "./components/auth/register";
 import CreatePlan from "./components/plans/CreatePlan";
 
 
