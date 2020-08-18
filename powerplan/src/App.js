@@ -1,15 +1,27 @@
 import React from 'react';
-import './scss/App.css';
+
 import Login from "./components/login";
+import Navbar from "./components/layout/Navbar";
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import './scss/main.scss';
 
 
 const App = () => {
-  return (
-    <div className="App App-header">
-      <h1>PowerPlan</h1>
-      <Login/>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <>
+                <div className="App App-header">
+                    <Navbar/>
+                    <Login/>
+                </div>
+                {/*<Switch>*/}
+                    {/*<Route path={"/"} component={App}/>*/}
+                {/*</Switch>*/}
+            </>
+        </BrowserRouter>
+    );
 }
 
 export default App;
+
+

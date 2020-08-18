@@ -1,0 +1,59 @@
+@use 'sass:color';
+
+.nav-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: fade-out($color-deep-grey, 0.4);
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .navList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      text-decoration: none;
+      list-style: none;
+      &:hover{
+        transition: 0.1s;
+        transform: scale(1.05);
+      }
+      &:active {
+        //background-color: fade-out($color-deep-grey, 0.1);;
+      }
+
+      .active {
+        text-decoration: none;
+        color: $color-text-white;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $color-text-white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 2px 2px solid $color-deep-grey;
+  padding: 0 20px;
+  span {
+    color: $color-orange;
+  }
+  &:hover{
+    //background-color: fade-out($color-deep-grey, 0.3);;
+    transition: 0.10s;
+    transform: scale(1.05);
+  }
+  &:active {
+    background-color: fade-out($color-deep-grey, 0.1);;
+  }
+}
