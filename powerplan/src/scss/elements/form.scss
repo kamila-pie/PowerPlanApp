@@ -1,5 +1,17 @@
 @use "sass:color";
 
+.plan-form {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+}
+
+.createPlanWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .form-group {
   display: flex;
   justify-content: space-between;
@@ -21,7 +33,9 @@
 }
 
 .btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 0px;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
@@ -44,4 +58,26 @@
   margin: 10px 0;
   font-size: 12px;
 }
+.newPlanDetails {
+
+  margin: 10px 0;
+  height: 32px;
+  input, textarea {
+    background-color: fade-out($color-light-grey, 0.2);
+    &:active, &:hover{
+      cursor: pointer;
+      background-color: fade-out($color-deep-grey, 0.2);
+    }
+  }
+}
+
+.planCreator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
 

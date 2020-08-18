@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0591f955-10f1-4aa7-83b3-546e7a0db8f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/firebaseConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/planActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/plans/NewPlanDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/planReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/planReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/form.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <updated>1597738907451</updated>
       <workItem from="1597738908689" duration="17648000" />
       <workItem from="1597759165411" duration="4527000" />
-      <workItem from="1597764808989" duration="17317000" />
+      <workItem from="1597764808989" duration="22247000" />
     </task>
     <servers />
   </component>
