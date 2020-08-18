@@ -4,33 +4,28 @@
   display: flex;
   width: 100%;
   background-color: fade-out($color-deep-grey, 0.4);
-
 }
 
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
-
+  height: 80px;
   .navList {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    li {
+    li , a , .active {
       text-decoration: none;
       list-style: none;
+      color: $color-text-white;
+      padding: 0 10px;
       &:hover{
         transition: 0.1s;
         transform: scale(1.05);
       }
       &:active {
-        //background-color: fade-out($color-deep-grey, 0.1);;
-      }
-
-      .active {
-        text-decoration: none;
-        color: $color-text-white;
-        padding: 0 10px;
+        color: fade-out($color-deep-grey, 0.1);;
       }
     }
   }
@@ -54,6 +49,6 @@
     transform: scale(1.05);
   }
   &:active {
-    background-color: fade-out($color-deep-grey, 0.1);;
+    background-color: fade-out($color-grey, 0.1);
   }
 }

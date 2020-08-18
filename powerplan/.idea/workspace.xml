@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0591f955-10f1-4aa7-83b3-546e7a0db8f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/elements/Navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/elements/dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/elements/plans.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/settings/reset.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Notifications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/SignedOutLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedOutLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/App.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/PlanList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/PlanSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanSummary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/Navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -58,7 +65,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597738907451</updated>
-      <workItem from="1597738908689" duration="17304000" />
+      <workItem from="1597738908689" duration="17648000" />
+      <workItem from="1597759165411" duration="4527000" />
+      <workItem from="1597764808989" duration="8945000" />
     </task>
     <servers />
   </component>
@@ -74,5 +83,13 @@
       <screen x="46" y="27" width="1320" height="741" />
     </state>
     <state x="508" y="140" width="722" height="460" key="EditFileWatcherDialog/46.27.1320.741@46.27.1320.741" timestamp="1597746125382" />
+    <state x="195" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1597764777313">
+      <screen x="46" y="27" width="1320" height="741" />
+    </state>
+    <state x="195" y="31" width="1022" height="737" key="SettingsEditor/46.27.1320.741@46.27.1320.741" timestamp="1597764777313" />
+    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597764610369">
+      <screen x="46" y="27" width="1320" height="741" />
+    </state>
+    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup/46.27.1320.741@46.27.1320.741" timestamp="1597764610369" />
   </component>
 </project>

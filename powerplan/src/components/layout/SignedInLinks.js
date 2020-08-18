@@ -5,8 +5,9 @@ import '../../scss/main.scss';
 const SignedInLinks = () => {
     return (
         <ul className={'navList'}>
-            <li> <NavLink to={'/'}> Signup </NavLink> </li>
-            <li> <NavLink to={'/'}> Login </NavLink> </li>
+            <li> <NavLink to={'/create'}> New Plan </NavLink> </li>
+            <li> <NavLink to={'/'}> Log Out </NavLink> </li>
+            <li> <NavLink to={'/'} className={'avatar'}> <i className="fa fa-lg fa-user" aria-hidden="true"></i> </NavLink> </li>
         </ul>
     )
 }
