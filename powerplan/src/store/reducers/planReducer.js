@@ -6,6 +6,12 @@ const initState = {
     ]
 }
 
-const planReducer = (state = initState, action) => { return state };
+const planReducer = (state = initState, action) => {
+    switch (action.type) {
+        case 'CREATE_PLAN':
+            console.log('created plan', action.plan);
+    }
+    return state
+};
 
 export default planReducer;

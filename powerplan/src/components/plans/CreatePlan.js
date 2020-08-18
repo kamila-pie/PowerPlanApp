@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { connect } from 'react-redux';
+import { createPlan } from "../../store/actions/planActions";
+import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
 
 
 class CreatePlan extends Component {
@@ -15,7 +17,8 @@ class CreatePlan extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        //console.log(this.state);
+        this.props.createPlan(this.state);
     }
     render() {
         return (
@@ -28,7 +31,7 @@ class CreatePlan extends Component {
                     </div>
                     <FormGroup>
                         <Label>Plan Content</Label>
-                        <textarea id="context" onChange={this.handleChange} placeholder={'content'}/>
+                        <textarea id="content" onChange={this.handleChange} placeholder={'content'}/>
                     </FormGroup>
                     <Button>Create Plan</Button>
                 </Form>
@@ -37,4 +40,10 @@ class CreatePlan extends Component {
     }
 }
 
-export default CreatePlan;
+const mapDispatchToProp = (dispatch) => {
+    return {
+        createPlan: (plan) => dispatch(createPlan(plan))
+    }
+}
+
+export default connect(null, mapDispatchToProp)(CreatePlan);
