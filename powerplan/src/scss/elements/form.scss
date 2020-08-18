@@ -1,3 +1,4 @@
+@use "sass:color";
 
 .form-group {
   display: flex;
@@ -11,5 +12,36 @@
     justify-content: flex-start;
     margin: 10px 0;
     height: 32px;
+    background-color: fade-out($color-light-grey, 0.2);
+    &:active, &:hover{
+      cursor: pointer;
+      background-color: fade-out($color-deep-grey, 0.2);
+    }
   }
 }
+
+.btn {
+  display: block;
+  border: 0px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 19px;
+  margin: 5px;
+  width: calc(100% - 10px);
+  overflow: hidden;
+  padding: 0px 10px;
+  user-select: none;
+  height: 35px;
+  background: $color-orange;
+  &:hover{
+    background: darken($color-orange, 15%);
+  }
+}
+
+.continue {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
