@@ -1,0 +1,16 @@
+.planDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cardContent {
+
+  margin: 20px 0;
+}
+.cardAction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

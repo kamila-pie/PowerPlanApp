@@ -1,0 +1,15 @@
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  label {
+    margin-right: 10px;
+  }
+  .form-control {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    height: 32px;
+  }
+}
