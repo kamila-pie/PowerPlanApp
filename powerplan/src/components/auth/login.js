@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import {FacebookLoginButton, GoogleLoginButton} from "react-social-login-buttons";
+import { connect } from 'react-redux';
+import { login } from "../../store/actions/authActions";
 
 class Login extends Component {
     state= {
@@ -16,6 +18,7 @@ class Login extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
+        this.props.login(this.state);
     }
     render() {
         return (
@@ -45,4 +48,10 @@ class Login extends Component {
     }
 }
 
-export default Login;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        login: (creds) => dispatch(login(creds))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Login);

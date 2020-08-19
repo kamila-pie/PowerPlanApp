@@ -3,9 +3,13 @@ import {Link} from "react-router-dom";
 import '../../scss/main.scss';
 import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
+import { connect } from 'react-redux';
 
 
 const Navbar = () => {
+
+
+
     return (
         <nav className="nav-wrapper">
             <div className="container">
@@ -17,5 +21,11 @@ const Navbar = () => {
         </nav>
     )
 }
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
 
-export default Navbar;
+    }
+}
+
+export default connect(mapStateToProps)(Navbar);
