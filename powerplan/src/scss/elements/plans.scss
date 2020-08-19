@@ -1,16 +1,88 @@
-.planDetails {
+@use "sass:color";
+
+.plan-form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  height: calc(100vh - 80px);
+  width: calc(100vw - 400px);
 }
 
-.cardContent {
-
-  margin: 20px 0;
-}
-.cardAction {
+.createPlanWrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+
+}
+.planTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .planTitleName {
+    margin-right: 10px;
+  }
+  .planTitleDate {
+    input {
+      color: $color-grey;
+    }
+  }
+}
+
+.planExcercisesWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 349px;
+  border-radius: 3px;
+  background-color: fade-out($color-light-grey, 0.6);
+  margin: 5px;
+  padding: 10px;
+  h3 {
+    margin: 10px auto;
+  }
+}
+
+.planCreator {
+  display: flex;
+  align-items: center;
+  #exercise {
+    width: 100%;
+  }
+}
+.exercises {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.exercisesInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.planCreatorExercises {
+  display: flex;
+  align-items: center;
+
+  input, Input {
+    width: 50px;
+    margin-right: 40px;
+
+  }
+}
+
+.addBtn {
+  border: 0px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 12px;
+  height: 35px;
+  margin: 5px;
+  overflow: hidden;
+  padding: 0px 10px;
+  background: $color-green;
+  &:hover{
+    background: darken($color-green, 15%);
+    color: $color-text-white;
+  }
 }

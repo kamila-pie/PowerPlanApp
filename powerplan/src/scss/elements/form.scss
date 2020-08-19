@@ -1,22 +1,10 @@
 @use "sass:color";
 
-.plan-form {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 80px);
-}
-
-.createPlanWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .form-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  label {
+  label, Label {
     margin-right: 10px;
   }
   .form-control {
@@ -25,9 +13,11 @@
     margin: 10px 0;
     height: 32px;
     background-color: fade-out($color-light-grey, 0.2);
+
     &:active, &:hover{
       cursor: pointer;
       background-color: fade-out($color-deep-grey, 0.2);
+      color: $color-text-white;
     }
   }
 }
@@ -51,6 +41,7 @@
   background: $color-orange;
   &:hover{
     background: darken($color-orange, 15%);
+    color: $color-text-white;
   }
 }
 
@@ -59,25 +50,20 @@
   font-size: 12px;
 }
 .newPlanDetails {
-
-  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
   height: 32px;
-  input, textarea {
+  Input, textarea {
     background-color: fade-out($color-light-grey, 0.2);
     &:active, &:hover{
       cursor: pointer;
-      background-color: fade-out($color-deep-grey, 0.2);
+      background-color: fade-out($color-light-grey, 0.2);
+      color: $color-text-white;
     }
   }
 }
 
-.planCreator {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-}
 
 
 
