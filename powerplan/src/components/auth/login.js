@@ -1,29 +1,33 @@
 import React, { Component } from 'react';
-
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import {FacebookLoginButton, GoogleLoginButton} from "react-social-login-buttons";
-import { connect } from 'react-redux';
-import { login } from "../../store/actions/authActions";
+import { FacebookLoginButton, GoogleLoginButton } from "react-social-login-buttons";
+import { fireBase } from '../../config/firebaseConfig';
+
 
 class Login extends Component {
-    state= {
+    state = {
         email: '',
         password: ''
+    };
+
+    login = (e) => {
+        e.preventDefault();
+        fireBase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+            .catch(() => {
+                console.log("Błędny email lub hasło");
+            })
     }
+
     handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
         })
     }
-    handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.state);
-        this.props.login(this.state);
-    }
+
     render() {
         return (
             <div className="container">
-                <Form className="login-form" onSubmit={this.handleSubmit} >
+                <Form className="login-form" onSubmit={e => this.login(e)} >
                     <h2>Welcome Back</h2>
                     <FormGroup>
                         <Label>E-mail</Label>
@@ -48,10 +52,5 @@ class Login extends Component {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        login: (creds) => dispatch(login(creds))
-    }
-}
 
-export default connect(null, mapDispatchToProps)(Login);
+export default Login;

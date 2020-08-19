@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import {FacebookLoginButton, GoogleLoginButton} from "react-social-login-buttons";
+import { FacebookLoginButton, GoogleLoginButton } from "react-social-login-buttons";
+import { fireBase } from "../../config/firebaseConfig";
 
 class Register extends Component {
     state= {
@@ -15,14 +15,20 @@ class Register extends Component {
             [e.target.id]: e.target.value
         })
     }
-    handleSubmit = (e) => {
+
+    //do rozbudowy this.state.email, this.state.password
+    register = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        fireBase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+            .then(() => console.log('działa'))
+            .catch(() => {
+                console.log("Konto nie istnieje");
+            })
     }
     render() {
         return (
             <div className="container">
-                <Form className="login-form" onSubmit={this.handleSubmit} >
+                <Form className="login-form" onSubmit={e => this.register(e)} >
                     <h2>Welcome</h2>
                     <h3>Create your account:</h3>
                     <FormGroup>
@@ -41,7 +47,7 @@ class Register extends Component {
                         <Label>Password</Label>
                         <Input type={'password'} id={'password'} onChange={this.handleChange}  placeholder={'password'}/>
                     </FormGroup>
-                    <Button>LOGIN</Button>
+                    <Button type={'submit'}>LOGIN</Button>
                     <div className={'continue'}>or continue with your social account</div>
                     <FacebookLoginButton/>
                     <GoogleLoginButton/>

@@ -1,9 +1,8 @@
-import firebase from "firebase/app";
+import * as firebase from 'firebase';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-// Your web app's Firebase configuration
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyDhX9xrwpkOx-i4k1V4cv-WomZ_ss4nAyE",
     authDomain: "kamila-powerplanapp.firebaseapp.com",
     databaseURL: "https://kamila-powerplanapp.firebaseio.com",
@@ -13,9 +12,5 @@ var firebaseConfig = {
     appId: "1:144712585766:web:193fca2ec0b00d41864ce7",
     measurementId: "G-5L5KH5RJ3D"
 };
-// // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-// firebase.analytics();
-//firebase.firestore().settings({ timestampsInSnapshots: true });
 
-export default firebase;
+export const fireBase = firebase.initializeApp(firebaseConfig);
