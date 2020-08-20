@@ -1,14 +1,13 @@
 import React from 'react';
-
-import Login from "./components/auth/login";
-import Navbar from "./components/layout/Navbar";
+import Login from "../auth/login";
+import Navbar from "../layout/Navbar";
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import './scss/main.scss';
-import Dashboard from "./components/dashboard/Dashboard";
-import PlanDetalis from "./components/plans/PlanDetails";
-import Register from "./components/auth/register";
-import CreatePlan from "./components/plans/CreatePlan";
-
+import '../../scss/main.scss';
+import Dashboard from "../dashboard/Dashboard";
+import PlanDetalis from "../plans/PlanDetails";
+import Register from "../auth/register";
+import CreatePlan from "../plans/CreatePlan";
+import {AuthContext} from "../../config/context";
 
 const App = () => {
     return (

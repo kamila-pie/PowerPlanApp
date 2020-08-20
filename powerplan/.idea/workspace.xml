@@ -5,20 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0591f955-10f1-4aa7-83b3-546e7a0db8f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/signedInLinks.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/plans/AddExercise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/plans/ExerciseItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/firebaseConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/authActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/plans.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +60,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/app" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/auth" />
-      <recent name="$PROJECT_DIR$/src/scss/elements" />
-      <recent name="$PROJECT_DIR$/src/Views/AppRoot" />
-      <recent name="$PROJECT_DIR$/src/scss" />
+      <recent name="$PROJECT_DIR$/src/components/plans" />
+      <recent name="$PROJECT_DIR$/src/components/layout" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +77,7 @@
       <updated>1597738907451</updated>
       <workItem from="1597738908689" duration="17648000" />
       <workItem from="1597759165411" duration="4527000" />
-      <workItem from="1597764808989" duration="57399000" />
+      <workItem from="1597764808989" duration="77243000" />
     </task>
     <servers />
   </component>

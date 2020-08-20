@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import React, {useState} from 'react';
+import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
+import AddExercise from "./AddExercise";
+import ExerciseItem from "./ExerciseItem";
 
 // { title: '',
 //     date: '',
@@ -9,13 +11,13 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const CreatePlan = () => {
 
-    const [plan, setPlan] = useState( [] );
-    const [exercise, setExercise] = useState( [] );
-    const [exerciseInput, setExerciseInput] = useState({} );
+    const [plan, setPlan] = useState([]);
+    const [exercise, setExercise] = useState([]);
+    const [exerciseInput, setExerciseInput] = useState({});
 
     const handleChange = ({name, value}) => {
         setExerciseInput(prevState => (
-            {...prevState, [name]: value }
+            {...prevState, [name]: value}
         ))
     }
     const addExercise = () => {
@@ -32,7 +34,7 @@ const CreatePlan = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-       // this.props.createPlan(state);
+        // this.props.createPlan(state);
     }
     return (
         <div className="container">
@@ -52,39 +54,43 @@ const CreatePlan = () => {
                     </div>
 
                     <div className="planExcercisesWrapper">
-                        <h3> Add exercises: </h3>
-                        <div className="planCreator">
-                            <Label htmlFor={'exercise'}>exercise</Label>
-                            <Input type={'text'} name={'exercise'} onChange={e => handleChange(e.target)}
-                                   placeholder={'exercise'}/>
-                        </div>
-                        <div className="exercises">
-                            <div className="main exercisesInfo">
-                                <div className="planCreatorExercises">
-                                    <Label htmlFor={'series'}>series :</Label>
-                                    <Input type={'number'} name={'series'} onChange={e => handleChange(e.target)}
-                                           placeholder={'qty'}/>
-                                </div>
-                                <div className="planCreatorExercises">
-                                    <Label htmlFor={'repeat'}>repeats :</Label>
-                                    <Input type={'number'} name={'repeat'} onChange={e => handleChange(e.target)}
-                                           placeholder={'qty'}/>
-                                </div>
-                            </div>
-                            <div className="additional exercisesInfo">
-                                <div className="planCreatorExercises">
-                                    <Label htmlFor={'weighted'}>weighted [kg] : </Label>
-                                    <Input type={'number'} name={'weighted'} onChange={e => handleChange(e.target)}
-                                           placeholder={'kg'}/>
-                                </div>
-                                <div className="planCreatorExercises">
-                                    <Label htmlFor={'brake'}>brake [sec] : </Label>
-                                    <Input type={'number'} name={'brake'} onChange={e => handleChange(e.target)}
-                                           placeholder={'time'}/>
-                                </div>
-                            </div>
-                        </div>
-                        <button className={'addBtn'} onClick={addExercise} >ADD EXCERCISE</button>
+                        {/*<h3> Add exercises: </h3>*/}
+                        {/*<div className="planCreator">*/}
+                        {/*    <Label htmlFor={'exercise'}>exercise</Label>*/}
+                        {/*    <Input type={'text'} name={'exercise'} onChange={e => handleChange(e.target)}*/}
+                        {/*           placeholder={'exercise'}/>*/}
+                        {/*</div>*/}
+                        {/*<div className="exercises">*/}
+                        {/*    <div className="main exercisesInfo">*/}
+                        {/*        <div className="planCreatorExercises">*/}
+                        {/*            <Label htmlFor={'series'}>series :</Label>*/}
+                        {/*            <Input type={'number'} name={'series'} onChange={e => handleChange(e.target)}*/}
+                        {/*                   placeholder={'qty'}/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="planCreatorExercises">*/}
+                        {/*            <Label htmlFor={'repeat'}>repeats :</Label>*/}
+                        {/*            <Input type={'number'} name={'repeat'} onChange={e => handleChange(e.target)}*/}
+                        {/*                   placeholder={'qty'}/>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="additional exercisesInfo">*/}
+                        {/*        <div className="planCreatorExercises">*/}
+                        {/*            <Label htmlFor={'weighted'}>weighted [kg] : </Label>*/}
+                        {/*            <Input type={'number'} name={'weighted'} onChange={e => handleChange(e.target)}*/}
+                        {/*                   placeholder={'kg'}/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="planCreatorExercises">*/}
+                        {/*            <Label htmlFor={'brake'}>brake [sec] : </Label>*/}
+                        {/*            <Input type={'number'} name={'brake'} onChange={e => handleChange(e.target)}*/}
+                        {/*                   placeholder={'time'}/>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        <button className={'addBtn'} onClick={addExercise}>ADD EXCERCISE</button>
+
+                        <AddExercise/>
+                        <ExerciseItem/>
+                        <ExerciseItem/>
 
                     </div>
                 </FormGroup>

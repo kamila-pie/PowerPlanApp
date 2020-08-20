@@ -10,7 +10,7 @@ const AuthProvider = ({children}) => {
         e.preventDefault();
         if(user){
             fireBase.auth().signOut().then(()=>{
-                return <Redirect to="/" />
+                return <Redirect to='/login' />
             })
         }
     }

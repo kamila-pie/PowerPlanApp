@@ -5,15 +5,18 @@ import { fireBase } from '../../config/firebaseConfig';
 
 
 class Login extends Component {
+
     state = {
         email: '',
         password: ''
     };
 
+//login function
     login = (e) => {
         e.preventDefault();
         fireBase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
-            .catch(() => {
+            .catch((err) => {
+                console.log(err);
                 console.log("Błędny email lub hasło");
             })
     }
