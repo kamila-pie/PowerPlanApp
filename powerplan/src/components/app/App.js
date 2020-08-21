@@ -1,17 +1,17 @@
 import React from 'react';
 import Login from "../auth/login";
 import Navbar from "../layout/Navbar";
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {Router, Route, Switch} from 'react-router-dom'
 import '../../scss/main.scss';
 import Dashboard from "../dashboard/Dashboard";
 import PlanDetalis from "../plans/PlanDetails";
 import Register from "../auth/register";
 import CreatePlan from "../plans/CreatePlan";
-import {AuthContext} from "../../config/context";
+import history from '../../config/history';
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <Router history={ history }>
             <>
                 <div className="App App-header">
                     <Navbar/>
@@ -24,7 +24,7 @@ const App = () => {
                     </Switch>
                 </div>
             </>
-        </BrowserRouter>
+        </Router>
     );
 }
 

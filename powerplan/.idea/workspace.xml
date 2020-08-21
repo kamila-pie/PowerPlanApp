@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0591f955-10f1-4aa7-83b3-546e7a0db8f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/dashboard/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/signedInLinks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/plans/AddExercise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/plans/ExerciseItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/AddExercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/AddExercise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/plans.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +69,7 @@
       <updated>1597738907451</updated>
       <workItem from="1597738908689" duration="17648000" />
       <workItem from="1597759165411" duration="4527000" />
-      <workItem from="1597764808989" duration="77243000" />
+      <workItem from="1597764808989" duration="83622000" />
     </task>
     <servers />
   </component>
