@@ -1,22 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import App from './App';
+import App from './components/app/App';
 import './scss/main.scss';
-import { createStore, applyMiddleware } from "redux";
-import rootReducer from "./store/reducers/rootReducer";
-import { Provider } from 'react-redux';
-import thunk from "redux-thunk";
+import AuthProvider from "./config/context";
 
-//extra funkcjonalnośc do interkcji z danymi
-const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-    <React.StrictMode>
-        <Provider store={store}>
-            <App />
-        </Provider>
-    </React.StrictMode>,
+    <AuthProvider>
+        <App />
+    </AuthProvider>,
     document.getElementById('root')
 );
 

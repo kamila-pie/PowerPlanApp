@@ -1,7 +1,8 @@
 @import "settings/reset";
 @import "./settings/colors";
-@import "elements/App";
-@import "./elements/Navbar";
-@import "elements/form";
-@import "./elements/dashboard";
-@import "./elements/plans";
+@import "../components/app/App";
+@import "../components/layout/Navbar";
+@import "../components/auth/form";
+@import "../components/dashboard/dashboard";
+@import "../components/plans/plans";
+@import "../components/layout/signedInLinks";

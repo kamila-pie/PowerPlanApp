@@ -1,34 +1,29 @@
-import React, {Component} from 'react';
+import React, { useContext } from 'react';
 import '../../scss/main.scss';
 import Notifications from "./Notifications";
 import PlanList from "../plans/PlanList";
-import { connect } from 'react-redux';
+import {AuthContext} from "../../config/context";
+import Home from "./Home";
 
-class Dashboard extends Component {
-    render() {
-        const { plans } = this.props;
 
-        //console.log(this.props);
-        return (
-            <div className={'dashboard container'}>
-                <div className="row">
-                    <div className="plans col s12 m6">
-                        <h3> Created Workout Plans</h3>
-                        <PlanList plans={plans}/>
-                    </div>
-                    <div className="notifications col s12 m5 offset-m1">
-                        <Notifications/>
-                    </div>
+const Dashboard = ({plans}) => {
 
+    const {user, logOut} = useContext(AuthContext);
+    console.log(user);
+
+    return (
+        <div className={'dashboard container'}>
+            {user ? (<div className="row">
+                <div className="plans col s12 m6">
+                    <h3> Created Workout Plans</h3>
+                    <PlanList plans={plans}/>
                 </div>
-            </div>
-        )
-    }
-}
-const mapStateToProps = (state) => {
-    return {
-        plans: state.plan.plans
-    }
+                <div className="notifications col s12 m5 offset-m1">
+                    <Notifications/>
+                </div>
+            </div>) : (<Home/>)}
+        </div>
+    )
 }
 
-export default connect(mapStateToProps)(Dashboard);
+export default Dashboard;

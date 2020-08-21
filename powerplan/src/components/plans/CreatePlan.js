@@ -1,61 +1,103 @@
-import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { connect } from 'react-redux';
-import { createPlan } from "../../store/actions/planActions";
-import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
+import React, {useState} from 'react';
+import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
+import AddExercise from "./AddExercise";
+import ExerciseItem from "./ExerciseItem";
 
-
-class CreatePlan extends Component {
-    state = {
-        title: '',
-        content: ''
+// { title: '',
+//     date: '',
+//     exercises: [
+//
+// ]
+export class CreatePlan extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            isVisibleNewExcercise: false,
+            exercises: [],
+        }
     }
-    handleChange = (e) => {
-        this.setState({
-            [e.target.id]: e.target.value
+
+    handleChange = ({name, value}) => {
+        // setExerciseInput(prevState => (
+        //     {...prevState, [name]: value}
+        // ))
+    }
+
+    showNewExcercise = () => {
+        this.setState(prevState => ({...prevState, isVisibleNewExcercise: true}));
+        // setExercise(prevState => (
+        //     [...prevState, {
+        //         name: exerciseInput.exercise,
+        //         series: exerciseInput.series,
+        //         repeat: exerciseInput.repeat,
+        //         weighted: exerciseInput.weighted,
+        //         brake: exerciseInput.brake
+        //     }]
+        // ))
+        
+    }
+
+    addExercise = (item) => {
+        const exercises = this.state.exercises;
+        exercises.push(item);
+
+        const link = `https://kamila-powerplanapp.firebaseio.com/excercise.json`;
+        fetch(link,	{
+            method:	'POST',
+            body:	JSON.stringify(item)
         })
+
+        this.setState(prevState => ({...prevState, isVisibleNewExcercise: false, exercises}));
     }
+
     handleSubmit = (e) => {
         e.preventDefault();
-        //console.log(this.state);
-        this.props.createPlan(this.state);
+        // this.props.createPlan(state);
     }
+
+    renderExcercises = () => {
+        const { exercises } = this.state;
+
+        return exercises.map(excercise => {
+            return (
+                <ExerciseItem
+                    // key={excercise.id}
+                    name={ excercise.name }
+                    series={ excercise.series }
+                    repeat={ excercise.repeat }
+                    weight={ excercise.weight }
+                    brake={ excercise.brake }
+                />
+            )
+        });
+    }
+
     render() {
+        const { isVisibleNewExcercise } = this.state;
+
         return (
             <div className="container">
-                <Form className="plan-form" onSubmit={this.handleSubmit} >
-                    <h2>Let's create new plan</h2>
+                <Form className="plan-form" onSubmit={e => this.handleSubmit(e)}>
+                    <h2>Let's create new workout plan</h2>
                     <FormGroup className="createPlanWrapper">
-                        <div className={"newPlanDetails"}>
-                            <Label htmlFor={'title'}>Title</Label>
-                            <Input type={'text'} id={'title'} onChange={this.handleChange} placeholder={'name your plan'}/>
+                        <div className="planTitle">
+                            <div className={"planTitleName"}>
+                                <Label htmlFor={'title'}> title</Label>
+                                <Input type={'text'} name={'title'} onChange={e => this.handleChange(e.target)}
+                                       placeholder={'name your plan'}/>
+                            </div>
+                            <div className={"planTitleDate"}>
+                                <Label htmlFor={'date'}>date</Label>
+                                <Input type={'date'} name={'date'} onChange={e => this.handleChange(e.target)}/>
+                            </div>
                         </div>
-                        <div className={"newPlanDetails"}>
-                            <Label>Notes</Label>
-                            <textarea id="content" onChange={this.handleChange} placeholder={'notes'}/>
-                        </div>
-                        <div className="newPlanDetails">
-                             <div  className="planCreator">
-                                 <Label htmlFor={'exercise'}>Exercise</Label>
-                                 <Input type={'text'} id={'exercise'} onChange={this.handleChange} placeholder={'exercise'}/>
-                             </div>
+    
+                        <div className="planExcercisesWrapper">
 
-                             <div  className="planCreator">
-                                 <Label htmlFor={'series'}>Series</Label>
-                                 <Input type={'text'} id={'series'} onChange={this.handleChange} placeholder={'give me number'}/>
-                             </div>
-                             <div  className="planCreator">
-                                 <Label htmlFor={'repeat'}>repeat</Label>
-                                 <Input type={'text'} id={'repeat'} onChange={this.handleChange} placeholder={'give me number'}/>
-                             </div>
-                             <div  className="planCreator">
-                                 <Label htmlFor={'weighted'}>weighted</Label>
-                                 <Input type={'text'} id={'weighted'} onChange={this.handleChange} placeholder={'kg'}/>
-                             </div>
-                             <div  className="planCreator">
-                                 <Label htmlFor={'brake'}>brake</Label>
-                                 <Input type={'text'} id={'brake'} onChange={this.handleChange} placeholder={'time brake'}/>
-                             </div>
+                            <button className={'addBtn'} onClick={this.showNewExcercise}>ADD EXCERCISE</button>
+    
+                            <AddExercise visible={ isVisibleNewExcercise }  addExercise={ item => this.addExercise(item) }/>
+                            { this.renderExcercises() }    
                         </div>
                     </FormGroup>
                     <Button className={"btn"}>Create Plan</Button>
@@ -65,10 +107,5 @@ class CreatePlan extends Component {
     }
 }
 
-const mapDispatchToProp = (dispatch) => {
-    return {
-        createPlan: (plan) => dispatch(createPlan(plan))
-    }
-}
 
-export default connect(null, mapDispatchToProp)(CreatePlan);
+export default CreatePlan;
