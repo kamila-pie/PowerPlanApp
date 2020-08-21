@@ -8,7 +8,7 @@ import Home from "./Home";
 
 const Dashboard = ({plans}) => {
 
-    const {user, logOut} = useContext(AuthContext);
+    const {user, logOut, register} = useContext(AuthContext);
     console.log(user);
 
     return (

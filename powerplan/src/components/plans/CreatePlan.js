@@ -42,6 +42,7 @@ export class CreatePlan extends React.Component {
         exercises.push(item);
 
         const link = `https://kamila-powerplanapp.firebaseio.com/excercise.json`;
+
         fetch(link,	{
             method:	'POST',
             body:	JSON.stringify(item)
@@ -61,7 +62,6 @@ export class CreatePlan extends React.Component {
         return exercises.map(excercise => {
             return (
                 <ExerciseItem
-                    // key={excercise.id}
                     name={ excercise.name }
                     series={ excercise.series }
                     repeat={ excercise.repeat }
@@ -93,7 +93,38 @@ export class CreatePlan extends React.Component {
                         </div>
     
                         <div className="planExcercisesWrapper">
-
+                            {/*<h3> Add exercises: </h3>*/}
+                            {/*<div className="planCreator">*/}
+                            {/*    <Label htmlFor={'exercise'}>exercise</Label>*/}
+                            {/*    <Input type={'text'} name={'exercise'} onChange={e => handleChange(e.target)}*/}
+                            {/*           placeholder={'exercise'}/>*/}
+                            {/*</div>*/}
+                            {/*<div className="exercises">*/}
+                            {/*    <div className="main exercisesInfo">*/}
+                            {/*        <div className="planCreatorExercises">*/}
+                            {/*            <Label htmlFor={'series'}>series :</Label>*/}
+                            {/*            <Input type={'number'} name={'series'} onChange={e => handleChange(e.target)}*/}
+                            {/*                   placeholder={'qty'}/>*/}
+                            {/*        </div>*/}
+                            {/*        <div className="planCreatorExercises">*/}
+                            {/*            <Label htmlFor={'repeat'}>repeats :</Label>*/}
+                            {/*            <Input type={'number'} name={'repeat'} onChange={e => handleChange(e.target)}*/}
+                            {/*                   placeholder={'qty'}/>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*    <div className="additional exercisesInfo">*/}
+                            {/*        <div className="planCreatorExercises">*/}
+                            {/*            <Label htmlFor={'weighted'}>weighted [kg] : </Label>*/}
+                            {/*            <Input type={'number'} name={'weighted'} onChange={e => handleChange(e.target)}*/}
+                            {/*                   placeholder={'kg'}/>*/}
+                            {/*        </div>*/}
+                            {/*        <div className="planCreatorExercises">*/}
+                            {/*            <Label htmlFor={'brake'}>brake [sec] : </Label>*/}
+                            {/*            <Input type={'number'} name={'brake'} onChange={e => handleChange(e.target)}*/}
+                            {/*                   placeholder={'time'}/>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                             <button className={'addBtn'} onClick={this.showNewExcercise}>ADD EXCERCISE</button>
     
                             <AddExercise visible={ isVisibleNewExcercise }  addExercise={ item => this.addExercise(item) }/>

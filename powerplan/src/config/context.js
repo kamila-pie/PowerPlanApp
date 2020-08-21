@@ -22,30 +22,19 @@ const AuthProvider = ({children}) => {
         fireBase.auth().createUserWithEmailAndPassword(email, password)
             .then(() => {
                 console.log('działa');
-                history.push('/home');
+                history.push('/dashboard');
             })
             .catch(() => {
                 console.log("Konto nie istnieje");
             })
     }
 
-    const logIn = (e, email, password) => {
-        e.preventDefault();
-        fireBase.auth().createUserWithEmailAndPassword(email, password)
-            .then(() => {
-                console.log('działa');
-                history.push('/dashboard');
-            })
-            .catch(() => {
-                console.log("Użytkownik zalogowany, przenieś do dashboard");
-            })
-    }
-
     useEffect(() => {
         fireBase.auth().onAuthStateChanged(setUser)
     }, []);
+
     return (
-        <AuthContext.Provider value={{user, logOut, register, logIn}}>
+        <AuthContext.Provider value={{user, logOut, register}}>
             {children}
         </AuthContext.Provider>
     )
