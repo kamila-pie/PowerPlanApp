@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { FacebookLoginButton, GoogleLoginButton } from "react-social-login-buttons";
 import { fireBase } from '../../config/firebaseConfig';
+import history from "../../config/history";
 
 
 class Login extends Component {
@@ -15,6 +16,10 @@ class Login extends Component {
     login = (e) => {
         e.preventDefault();
         fireBase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+            .then(() => {
+                console.log('jesteś zalogowany');
+                history.push('/dashboard');
+            })
             .catch((err) => {
                 console.log(err);
                 console.log("Błędny email lub hasło");

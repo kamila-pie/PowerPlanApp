@@ -13,6 +13,7 @@ export class AddExercise extends React.Component {
         this.state = {
             visible: props.visible,
             excercise: {},
+            exercises: []
         } 
     }
 
@@ -66,7 +67,7 @@ export class AddExercise extends React.Component {
 
         return (
             <div className="containerAddExcercise">
-                {/*<Form className="plan-form" onSubmit={e => handleSubmit(e)}>*/}
+
                     <h2>Add new exercise to your plan</h2>
                     <div className="createPlanWrapper">
                         <div className="planExcercisesWrapper">
@@ -99,12 +100,17 @@ export class AddExercise extends React.Component {
                                         <Input type={'number'} name={'brake'} onChange={e => this.handleChange(e.target)}
                                                placeholder={'time'}/>
                                     </div>
+                                    <div className="planCreatorExercises">
+                                        <Label htmlFor={'duration'}>duration [min] : </Label>
+                                        <Input type={'number'} name={'duration'} onChange={e => this.handleChange(e.target)}
+                                               placeholder={'duration'}/>
+                                    </div>
                                 </div>
                             </div>
                             <button className={'addBtn'} onClick={() => this.props.addExercise(this.state.excercise)}> SAVE </button>
                         </div>
                     </div>
-                {/*</Form>*/}
+
             </div>
         );
     }

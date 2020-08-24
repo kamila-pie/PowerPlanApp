@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0413677d-7de1-4695-9719-4a8377f76d4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/AddExercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/AddExercise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/ExerciseItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/ExerciseItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/context.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598020486187</updated>
-      <workItem from="1598020488339" duration="310000" />
+      <workItem from="1598020488339" duration="782000" />
+      <workItem from="1598268834824" duration="8558000" />
     </task>
     <servers />
   </component>

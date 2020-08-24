@@ -12,7 +12,8 @@ const AuthProvider = ({children}) => {
         e.preventDefault();
         if(user){
             fireBase.auth().signOut().then(()=>{
-                return <Redirect to='/login' />
+                //return <Redirect to='/login' />
+                history.push('/login');
             })
         }
     }
@@ -29,12 +30,24 @@ const AuthProvider = ({children}) => {
             })
     }
 
+    const logIn = (e, email, password) => {
+        e.preventDefault();
+        fireBase.auth().signInWithEmailAndPassword(email, password)
+            .then(() => {
+                console.log('jesteś zalogowany');
+                history.push('/dashboard');
+            })
+            .catch(() => {
+                console.log('niepoprawne logowanie');
+            })
+    }
+
     useEffect(() => {
         fireBase.auth().onAuthStateChanged(setUser)
     }, []);
 
     return (
-        <AuthContext.Provider value={{user, logOut, register}}>
+        <AuthContext.Provider value={{user, logOut, register, logIn}}>
             {children}
         </AuthContext.Provider>
     )
