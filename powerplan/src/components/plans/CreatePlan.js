@@ -35,19 +35,16 @@ export class CreatePlan extends React.Component {
     addExercise = (item) => {
         const exercises = this.state.exercises;
         exercises.push(item);
-
         this.setState(prevState => ({
             // ...prevState,
             exercises: [this.setState.exercise]
         }))
 
         const link = `https://kamila-powerplanapp.firebaseio.com/excercise.json`;
-
         fetch(link,	{
             method:	'POST',
             body:	JSON.stringify(item)
         })
-
         this.setState(prevState => ({...prevState, isVisibleNewExcercise: false, exercises}));
     }
 
@@ -96,7 +93,7 @@ export class CreatePlan extends React.Component {
                             <div className={"planTitleName"}>
                                 <Label htmlFor={'title'}> title</Label>
                                 <Input type={'text'} name={'title'} onChange={e => this.handleChange(e.target)}
-                                       placeholder={'name your plan'}/>
+                                       placeholder={'name your plan'} required/>
                             </div>
                             <div className={"planTitleDate"}>
                                 <Label htmlFor={'date'}>date</Label>
@@ -105,14 +102,13 @@ export class CreatePlan extends React.Component {
                         </div>
     
                         <div className="planExcercisesWrapper">
-
                             <button className={'addBtn'} onClick={this.showNewExcercise}>ADD EXCERCISE</button>
-    
                             <AddExercise visible={ isVisibleNewExcercise }  addExercise={ item => this.addExercise(item) } addToExercises={this.addToExercises}/>
                             {/*{ this.renderExcercises() }    */}
                             {this.state.exercises ? (
                                 <ul>
-                                    {this.state.exercises.map ((el, i) => <li key={i}>{el.exercise}</li>         )}
+                                    {this.state.exercises.map ((el, i) => <li key={i} className={'listElement'}>
+                                        {el.exercise} {el.series} x {el.repeat}<br/> weight: {el.weight}kg brake: {el.brake}s duration: {el.duration}min</li> )}
                                 </ul>
                             ): null }
                         </div>

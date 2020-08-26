@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import PlanSummary from "./PlanSummary";
+import {fireBase} from "../../config/firebaseConfig";
 
 
-const PlanList = ({plans}) => {
+const PlanList = () => {
+    const [plans, setPlans] = useState([]);
+
+    const db = fireBase.firestore();
+
+    useEffect(() => {
+        db.collection("plans").get()
+            .then(snapshot => snapshot.docs.forEach(el => setPlans(prevState => ([...prevState, el.data()] ) )))
+    }, []);
+
     return (
-        <div className="planList">
-            { plans && plans.map(plan => {
-                return (
-                    <PlanSummary plan={plan} key={plan.id} />
-                )
-            })}
-        </div>
+        <ul> {plans.map((el, i) => <li key={i}>{el.title}</li>)}</ul>
     )
 }
 

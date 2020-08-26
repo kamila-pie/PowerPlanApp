@@ -4,13 +4,16 @@
   display: flex;
   flex-direction: column;
   height: calc(100vh - 80px);
-  width: calc(100vw - 400px);
+  //width: calc(100vw - 400px);
 }
 
 .createPlanWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: fade-out($color-deep-grey, 0.3);
+  padding: 10px;
+  margin-bottom: 10px;
 
 }
 .planTitle {
@@ -26,13 +29,15 @@
     }
   }
 }
-
-.planExcercisesWrapper {
-  display: flex;
+.containerAddExcercise {
   flex-direction: column;
-  width: 349px;
+}
+
+.addExcercisesWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
   border-radius: 3px;
-  background-color: fade-out($color-light-grey, 0.6);
   margin: 5px;
   padding: 10px;
   h3 {
@@ -43,29 +48,49 @@
 .planCreator {
   display: flex;
   align-items: center;
+  padding: 0 10px;
   #exercise {
     width: 100%;
   }
 }
 .exercises {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .exercisesInfo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 .planCreatorExercises {
   display: flex;
   align-items: center;
-
+  padding: 0 10px;
   input, Input {
     width: 50px;
     margin-right: 40px;
 
+  }
+}
+
+.containerAddExcercise {
+  display: flex;
+  z-index: 2;
+  background-color: fade-out($color-deep-grey, 0.03);
+  position: absolute;
+  top: 141px;
+  left: 80px;
+}
+
+.planExcercisesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  ul {
+    margin: 0;
+    li {
+      display: flex;
+    }
   }
 }
 
@@ -77,22 +102,33 @@
   cursor: pointer;
   font-size: 12px;
   height: 35px;
+  width: 350px;
   margin: 5px;
   overflow: hidden;
   padding: 0px 10px;
   background: $color-green;
+
   &:hover{
     background: darken($color-green, 15%);
     color: $color-text-white;
   }
 }
 
-.containerAddExcercise {
-  display: flex;
-}
+
 .listElement {
-  position: relative;
+  //position: relative;
   animation: appear .5s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px;
+  line-height: 20px;
+  #text {
+    display: flex;
+
+
+    align-items: flex-start;
+  }
 }
 
 .listWrapper {

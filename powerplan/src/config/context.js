@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fireBase } from './firebaseConfig';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 import history from './history';
 
 export const AuthContext = React.createContext();

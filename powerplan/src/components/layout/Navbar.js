@@ -1,20 +1,25 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link} from "react-router-dom";
 import '../../scss/main.scss';
 import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
+import {AuthContext} from "../../config/context";
+
 
 
 const Navbar = () => {
+    const {user} = useContext(AuthContext);
 
     return (
-        <nav className="nav-wrapper">
-            <div className="container">
-                <Link to={'/'} className={'brand-logo'}>
-                    <span>Power</span>Plan</Link>
+        <nav className="navWrapper">
 
-                <SignedInLinks/>
-                <SignedOutLinks/>
+            <div className="containerNav">
+                <Link to={'/'} className={'brandLogo'}>
+                    <span>Power</span>Plan</Link>
+                {
+                    user ? (<SignedInLinks/> ) : (  <SignedOutLinks/>)
+                }
+
             </div>
         </nav>
     )

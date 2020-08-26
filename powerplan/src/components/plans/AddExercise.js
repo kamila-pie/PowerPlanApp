@@ -70,25 +70,25 @@ export class AddExercise extends React.Component {
 
                     <h2>Add new exercise to your plan</h2>
                     <div className="createPlanWrapper">
-                        <div className="planExcercisesWrapper">
+                        <div className="addExcercisesWrapper">
                             <div className="planCreator">
-                                <Label htmlFor={'exercise'}>exercise</Label>
+                                <Label htmlFor={'exercise'}>exercise:</Label>
                                 <Input type={'text'} name={'exercise'} onChange={e => this.handleChange(e.target)}
-                                       placeholder={'exercise'}/>
+                                       placeholder={'exercise'} required/>
                             </div>
+                            <div className="planCreator planCreatorExercises">
+                                <Label htmlFor={'series'}>series:</Label>
+                                <Input type={'number'} name={'series'} onChange={e => this.handleChange(e.target)}
+                                       placeholder={'qty'}/>
+                            </div>
+                            <div className="planCreator planCreatorExercises">
+                                <Label htmlFor={'repeat'}>repeats:</Label>
+                                <Input type={'number'} name={'repeat'} onChange={e => this.handleChange(e.target)}
+                                       placeholder={'qty'}/>
+                            </div>
+                        </div>
                             <div className="exercises">
                                 <div className="main exercisesInfo">
-                                    <div className="planCreatorExercises">
-                                        <Label htmlFor={'series'}>series :</Label>
-                                        <Input type={'number'} name={'series'} onChange={e => this.handleChange(e.target)}
-                                               placeholder={'qty'}/>
-                                    </div>
-                                    <div className="planCreatorExercises">
-                                        <Label htmlFor={'repeat'}>repeats :</Label>
-                                        <Input type={'number'} name={'repeat'} onChange={e => this.handleChange(e.target)}
-                                               placeholder={'qty'}/>
-                                    </div>
-                                </div>
                                 <div className="additional exercisesInfo">
                                     <div className="planCreatorExercises">
                                         <Label htmlFor={'weighted'}>weighted [kg] : </Label>

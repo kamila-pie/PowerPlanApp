@@ -6,8 +6,9 @@ import '../../scss/main.scss';
 import Dashboard from "../dashboard/Dashboard";
 import PlanDetalis from "../plans/PlanDetails";
 import Register from "../auth/register";
-import CreatePlan from "../plans/CreatePlan";
 import history from '../../config/history';
+import Home from "../dashboard/Home";
+import NewPlan from "../plans/NewPlan";
 
 const App = () => {
     return (
@@ -18,9 +19,10 @@ const App = () => {
                     <Switch>
                         <Route exact path={'/'} component={Dashboard}/>
                         <Route path={'/plan/:id'} component={PlanDetalis}/>
+                        <Route path={'/home'} component={Home}/>
                         <Route path={'/login'} component={Login}/>
                         <Route path={'/register'} component={Register}/>
-                        <Route path={'/create'} component={CreatePlan}/>
+                        <Route path={'/create'} component={NewPlan}/>
                     </Switch>
                 </div>
             </>
