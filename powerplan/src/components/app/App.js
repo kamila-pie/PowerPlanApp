@@ -9,6 +9,8 @@ import Register from "../auth/register";
 import history from '../../config/history';
 import Home from "../dashboard/Home";
 import NewPlan from "../plans/NewPlan";
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min.js";
 
 const App = () => {
     return (
@@ -17,12 +19,12 @@ const App = () => {
                 <div className="App App-header">
                     <Navbar/>
                     <Switch>
-                        <Route exact path={'/'} component={Dashboard}/>
+                        <Route exact path={'/dashboard'} component={Dashboard}/>
                         <Route path={'/plan/:id'} component={PlanDetalis}/>
                         <Route path={'/home'} component={Home}/>
                         <Route path={'/login'} component={Login}/>
                         <Route path={'/register'} component={Register}/>
-                        <Route path={'/create'} component={NewPlan}/>
+                        <Route path={'/newPlan'} component={NewPlan}/>
                     </Switch>
                 </div>
             </>

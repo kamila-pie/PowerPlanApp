@@ -1,7 +1,7 @@
 import React from "react";
 
-const PlanDetalis = (props) => {
-    //const id = props.match.params.id;
+const PlanDetalis = () => {
+
     return (
         <div className="planDetails">
             <div className="cardContent">

@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="navWrapper">
 
             <div className="containerNav">
-                <Link to={'/'} className={'brandLogo'}>
+                <Link to={'/home'} className={'brandLogo'}>
                     <span>Power</span>Plan</Link>
                 {
                     user ? (<SignedInLinks/> ) : (  <SignedOutLinks/>)

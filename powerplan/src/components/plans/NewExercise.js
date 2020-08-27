@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 import {fireBase} from "../../config/firebaseConfig";
 import {Input, Label} from "reactstrap";
 
@@ -13,6 +13,16 @@ const NewExercise = ({addExercise, toggleVisable}) => {
         duration: null
     });
     const db  = fireBase.firestore();
+    const [close, setClose] = useState(false);
+
+    const handleOnKeyEsc = (e) => {
+        if (e.key === 'Escape') {
+            // escape
+            e.preventDefault();
+            setClose(prevState => !prevState);
+        }
+    };
+
 
     const handleChange = ({name, value}) => {
         setExercise(prevState => ({
@@ -29,7 +39,10 @@ const NewExercise = ({addExercise, toggleVisable}) => {
 
 
     return (
-        <div className="containerAddExcercise">
+        <div className="containerAddExcercise swing-in-bottom-fwd">
+            <div className={'closeWindow'}>
+                <button className={'closeWindowBnt'} onClick={toggleVisable}>CLOSE</button>
+            </div>
 
             <h2>Add new exercise to your plan</h2>
             <div className="createPlanWrapper">
@@ -70,7 +83,7 @@ const NewExercise = ({addExercise, toggleVisable}) => {
                             </div>
                         </div>
                     </div>
-                    <button className={'addBtn'} onClick={e => handleSubmit(e)}> SAVE </button>
+                    <button className={'addBtn'} onClick={e => handleSubmit(e)}> ADD EXERCISE TO PLAN </button>
                 </div>
             </div>
 

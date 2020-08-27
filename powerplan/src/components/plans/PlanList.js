@@ -14,7 +14,11 @@ const PlanList = () => {
     }, []);
 
     return (
-        <ul> {plans.map((el, i) => <li key={i}>{el.title}</li>)}</ul>
+        <ul> {plans.map((el, i) => <li key={i} className={'plansList'}>
+            Title: {el.title}
+            <i className="fa fa-arrow-right" aria-hidden="true"></i>
+            Scheduled: {el.date}</li>)}
+        </ul>
     )
 }
 

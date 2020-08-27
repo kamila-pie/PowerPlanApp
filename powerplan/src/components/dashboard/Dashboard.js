@@ -13,15 +13,16 @@ const Dashboard = ({plans}) => {
 
     return (
         <div className={'dashboard container'}>
-            {user ? (<div className="row">
-                <div className="plans col s12 m6">
-                    <h3> Created Workout Plans</h3>
-                    <PlanList plans={plans}/>
-                </div>
-                <div className="notifications col s12 m5 offset-m1">
-                    <Notifications/>
-                </div>
-            </div>) : (<Home/>)}
+            {user ? (
+                <div className="rowNotivication swing-in-bottom-fwd">
+                    <div className="notifications">
+                        <Notifications/>
+                    </div>
+                    <div className="plans">
+                        <h3> Created Workout Plans</h3>
+                        <PlanList plans={plans}/>
+                    </div>
+            </div> ) : (<Home/>)}
         </div>
     )
 }

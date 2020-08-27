@@ -1,5 +1,7 @@
 @use "sass:color";
 
+
+
 .plan-form {
   display: flex;
   flex-direction: column;
@@ -11,10 +13,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: fade-out($color-deep-grey, 0.3);
+  background-color: fade-out($color-text-white, 0.3);
   padding: 10px;
   margin-bottom: 10px;
-
 }
 .planTitle {
   display: flex;
@@ -25,23 +26,26 @@
   }
   .planTitleDate {
     input {
-      color: $color-grey;
+      color: $color-light-grey;
     }
   }
 }
-.containerAddExcercise {
-  flex-direction: column;
-}
+
 
 .addExcercisesWrapper {
   display: flex;
   align-items: center;
   width: 100%;
   border-radius: 3px;
-  margin: 5px;
-  padding: 10px;
+  //margin: 5px;
+  //padding: 10px;
   h3 {
     margin: 10px auto;
+  }
+  label {
+    width: 90px;
+    text-align: left;
+    color:  $color-deep-grey;
   }
 }
 
@@ -55,6 +59,11 @@
 }
 .exercises {
   margin-bottom: 10px;
+  label {
+    width: 90px;
+    text-align: left;
+    color:  $color-deep-grey;
+  }
 }
 
 .exercisesInfo {
@@ -75,12 +84,15 @@
 
 .containerAddExcercise {
   display: flex;
+  flex-direction: column;
   z-index: 2;
   background-color: fade-out($color-deep-grey, 0.03);
   position: absolute;
   top: 141px;
-  left: 80px;
+  left: 95px;
 }
+.swing-in-bottom-fwd{animation:swing-in-bottom-fwd .5s cubic-bezier(.175,.885,.32,1.275) both}
+@keyframes swing-in-bottom-fwd{0%{transform:rotateX(100deg);transform-origin:bottom;opacity:0}100%{transform:rotateX(0);transform-origin:bottom;opacity:1}}
 
 .planExcercisesWrapper {
   display: flex;
@@ -94,7 +106,7 @@
   }
 }
 
-.addBtn {
+.addBtn, .closeWindowBnt {
   border: 0px;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
@@ -113,6 +125,22 @@
     color: $color-text-white;
   }
 }
+.closeWindow {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  .closeWindowBnt {
+    margin: 5px;
+    width: 70px;
+    height: 25px;
+    color: $color-deep-grey;
+    &:hover{
+      background: darken($color-orange, 15%);
+      color: $color-text-white;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+    }
+  }
+}
 
 
 .listElement {
@@ -125,8 +153,6 @@
   line-height: 20px;
   #text {
     display: flex;
-
-
     align-items: flex-start;
   }
 }
@@ -162,3 +188,11 @@
     top: 0;
   }
 }
+
+.exerciseList {
+  color: $color-deep-grey;
+  .exerciseListEl {
+    padding: 0 5px;
+  }
+}
+

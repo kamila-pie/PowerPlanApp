@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0413677d-7de1-4695-9719-4a8377f76d4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/dashboard/home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/plans/NewPlan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/auth/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/form.scss" afterDir="false" />
@@ -15,15 +15,29 @@
       <change beforePath="$PROJECT_DIR$/src/components/auth/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Notifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/AddExercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/AddExercise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/SignedOutLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedOutLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/signedInLinks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/signedInLinks.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/NewExercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/NewExercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/NewPlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/NewPlan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/NewPlanDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/PlanList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/PlanSummary.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/plans.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/forms/_input-fields.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/components/forms/_input-fields.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/materialize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/materialize-src-v1.0.0/materialize-src/sass/materialize.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +62,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +76,8 @@
       <workItem from="1598020488339" duration="782000" />
       <workItem from="1598268834824" duration="15846000" />
       <workItem from="1598437765954" duration="6632000" />
-      <workItem from="1598448209838" duration="21374000" />
+      <workItem from="1598448209838" duration="22826000" />
+      <workItem from="1598524927121" duration="25760000" />
     </task>
     <servers />
   </component>
@@ -82,9 +97,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="439" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598440664760">
+    <state x="439" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598558635618">
       <screen x="46" y="27" width="1320" height="741" />
     </state>
-    <state x="439" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/46.27.1320.741@46.27.1320.741" timestamp="1598440664760" />
+    <state x="439" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/46.27.1320.741@46.27.1320.741" timestamp="1598558635618" />
+    <state x="195" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1598547744446">
+      <screen x="46" y="27" width="1320" height="741" />
+    </state>
+    <state x="195" y="31" width="1022" height="737" key="SettingsEditor/46.27.1320.741@46.27.1320.741" timestamp="1598547744446" />
+    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598556997813">
+      <screen x="46" y="27" width="1320" height="741" />
+    </state>
+    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup/46.27.1320.741@46.27.1320.741" timestamp="1598556997813" />
   </component>
 </project>

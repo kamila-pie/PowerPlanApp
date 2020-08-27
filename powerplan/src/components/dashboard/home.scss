@@ -4,8 +4,41 @@
   /* width: 80%; */
   justify-content: center;
   align-items: center;
+  background-color: fade-out($color-deep-grey, 0.2);
 }
 
 .madeBy {
   cursor: pointer;
+  margin-left: 7px;
 }
+
+.headerHome {
+  text-shadow: -1px 2px 0px rgb(0, 0, 0);
+}
+
+.iconSection, .contactSection{
+  background-color: $color-deep-grey;
+  padding: 0 20px;
+}
+
+.contactSection {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  height: 150px;
+}
+
+.getStartedBtn {
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover{
+    background: darken($color-green, 15%);
+    color: $color-text-white;
+  }
+}
+
+.parallax-container {
+  height: 300px;
+}
+.tracking-in-contract-bck-top{animation:tracking-in-contract-bck-top 1s cubic-bezier(.215,.61,.355,1.000) both}
+@keyframes tracking-in-contract-bck-top{0%{letter-spacing:1em;transform:translateZ(400px) translateY(-300px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}

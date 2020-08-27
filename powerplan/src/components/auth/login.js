@@ -34,8 +34,8 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="container containerForm">
-                <Form className="login-form" onSubmit={e => this.login(e)} >
+            <div className="containerForm flip-in-ver-right">
+                <Form className="login-form " onSubmit={e => this.login(e)} >
                     <h2>Welcome Back</h2>
                     <FormGroup>
                         <Label>E-mail</Label>
@@ -46,9 +46,9 @@ class Login extends Component {
                         <Input type={'password'} id={'password'} onChange={this.handleChange}  placeholder={'password'} required/>
                     </FormGroup>
                     <Button>LOGIN</Button>
-                    <div className={'continue'}>or continue with your social account</div>
-                    <FacebookLoginButton/>
-                    <GoogleLoginButton/>
+                    {/*<div className={'continue'}>or continue with your social account</div>*/}
+                    {/*<FacebookLoginButton/>*/}
+                    {/*<GoogleLoginButton/>*/}
                     <div>
                         <a href={'/login'}>Sign In</a>
                         <span> | </span>

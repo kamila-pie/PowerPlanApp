@@ -1,5 +1,6 @@
-.row {
+.rowNotivication {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 20px;
 
@@ -15,6 +16,48 @@
 }
 
 .notifications {
-  margin-left: 40px;
+  text-align: left;
+  background-color: fade-out($color-orange, 0.7);
+  margin: 0;
+  h5 {
+    background-color: fade-out($color-orange, 0.09);
+    padding: 15px 10px;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    padding: 10px;
+  }
+
+}
+
+.plans {
+  background-color: fade-out($color-deep-grey, 0.09);
+  padding: 0 20px 20px;
+  h3 {
+
+
+  }
+  ul {
+    margin-top: 10px;
+  }
+}
+
+.plansList {
+  text-align: left;
+  padding: 5px;
+  &:hover{
+    cursor: pointer;
+    background: darken($color-deep-grey, 15%);
+    color: $color-text-white;
+  }
+}
+.fa-arrow-right {
+  color: $color-orange;
+  margin: 0 5px;
+}
+.userName {
+  color: $color-deep-grey;
+  font-weight: 600;
 }
 

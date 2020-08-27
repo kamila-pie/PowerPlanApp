@@ -1,32 +1,35 @@
-import React from "react";
+import React, {useContext} from "react";
 import '../../scss/main.scss';
-
-
+import {AuthContext} from "../../config/context";
+import SignedInLinks from "../layout/SignedInLinks";
+import SignedOutLinks from "../layout/SignedOutLinks";
 
 
 const Home = () => {
+    const { logOut, user } = useContext(AuthContext);
 
     return (
         <div className="home">
-            {/*<h1>Get your power with us</h1>*/}
-            {/*<h3> Just login or register to getting started</h3>*/}
             <div id="index-banner" className="parallax-container">
                 <div className="section no-pad-bot">
 
-                            <h1 className="header center teal-text text-lighten-2">Get your power with us</h1>
+                            <h1 className="header headerHome tracking-in-contract-bck-top center teal-text text-lighten-2">Get your power with us</h1>
                             <div className="row center">
                                 <h5 className="header col s12 light">Just login or register to getting started</h5>
                             </div>
                             <div className="row center">
-                                <a href="/register" id="download-button"
-                                   className="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                                {
+                                    user ? ( <a href="/newPlan" id="download-button"
+                                                className="getStartedBtn btn-large waves-effect waves-light teal lighten-1">Get Started</a> ) : (   <a href="/register" id="download-button"
+                                                                                                                                         className="btn-large waves-effect waves-light teal lighten-1">Get Started</a>)
+                                }
                             </div>
                 </div>
-                <div className="parallax"><img src="../../images/pexels-victor-freitas-703016.jpg" alt="Unsplashed background img 1"/></div>
+                <div className="parallax"><img src="../images/pexels-victor-freitas-703016.jpg" alt="Unsplashed background img 1"/></div>
             </div>
 
             <div className="container">
-                <div className="section">
+                <div className="section iconSection">
 
                     {/*// --   Icon Section   -->*/}
                     <div className="row">
@@ -77,13 +80,15 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="parallax"><img src="../../images/pexels-andrea-piacquadio-3757376.jpg" alt="Unsplashed background img 2"/></div>
+                <div className="parallax">
+                    <img src="../../images/pexels-andrea-piacquadio-3757376.jpg" alt="Unsplashed background img 2"/>
+                </div>
             </div>
 
             <div className="container">
                 <div className="section">
                     <div className="row">
-                        <div className="col s12 center">
+                        <div className="col s12 center contactSection">
                             <h3><i className="mdi-content-send brown-text"></i></h3>
                             <h4>Contact </h4>
                             <p className="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -103,7 +108,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"/></div>
+                <div className="parallax"><img src="../../images/pexels-cottonbro-4753996.jpg" alt="Unsplashed background img 3"/></div>
             </div>
             <footer className="page-footer teal">
                 <div className="container">

@@ -15,8 +15,6 @@ class Register extends Component {
             [e.target.id]: e.target.value
         })
     }
-
-    //do rozbudowy this.state.email, this.state.password
     
     render() {
         const { email, password } = this.state;
@@ -25,7 +23,7 @@ class Register extends Component {
                 {
                     (context) => {
                         return (
-                            <div className="container containerForm">
+                            <div className="containerForm flip-in-ver-right">
                                 <Form className="login-form" onSubmit={e => context.register(e, email, password)} >
                                     <h2>Welcome</h2>
                                     <h3>Create your account:</h3>
@@ -46,13 +44,13 @@ class Register extends Component {
                                         <Input type={'password'} id={'password'} onChange={this.handleChange}  placeholder={'password'} required/>
                                     </FormGroup>
                                     <Button type={'submit'}>LOGIN</Button>
-                                    <div className={'continue'}>or continue with your social account</div>
-                                    <FacebookLoginButton/>
-                                    <GoogleLoginButton/>
+                                    {/*<div className={'continue'}>or continue with your social account</div>*/}
+                                    {/*<FacebookLoginButton/>*/}
+                                    {/*<GoogleLoginButton/>*/}
                                     <div>
                                         <a href={'/login'}>Sign In</a>
-                                        <span> | </span>
-                                        <a href={'/'}>Forgot Password</a>
+                                        {/*<span> | </span>*/}
+                                        {/*<a href={'/'}>Forgot Password</a>*/}
                                     </div>
                                 </Form>
                             </div>

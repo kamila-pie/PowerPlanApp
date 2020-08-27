@@ -33,7 +33,6 @@ textarea.materialize-textarea {
   width: 100%;
   font-size: $input-font-size;
   margin: $input-margin;
-  padding: $input-padding;
   box-shadow: none;
   box-sizing: content-box;
   transition: box-shadow .3s, border .3s;
@@ -313,7 +312,7 @@ textarea {
   &.materialize-textarea {
     line-height: normal;
     overflow-y: hidden; /* prevents scroll bar flash */
-    padding: .8rem 0 .8rem 0; /* prevents text jump on Enter keypress */
+    padding: 0 0 0 10px; /* prevents text jump on Enter keypress */
     resize: none;
     min-height: $input-height;
     box-sizing: border-box;

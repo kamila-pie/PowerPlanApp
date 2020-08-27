@@ -144,7 +144,7 @@ $datepicker-focus: rgba(0,0,0, .05) !default;
 $datepicker-selected: $secondary-color !default;
 $datepicker-selected-outfocus: desaturate(lighten($secondary-color, 35%), 15%) !default;
 $datepicker-day-focus: transparentize(desaturate($secondary-color, 5%), .75) !default;
-$datepicker-disabled-day-color: rgba(0, 0, 0, .3) !default;
+$datepicker-disabled-day-color: rgba(255, 255, 255, 0.3) !default;
 
 $timepicker-clock-color: rgba(0, 0, 0, .87) !default;
 $timepicker-clock-plate-bg: #eee !default;
@@ -307,7 +307,7 @@ $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
 $off-black: rgba(0, 0, 0, 0.87) !default;
 // Header Styles
 $h1-fontsize: 4.2rem !default;
-$h2-fontsize: 3.56rem !default;
+$h2-fontsize: 3.5rem !default;
 $h3-fontsize: 2.92rem !default;
 $h4-fontsize: 2.28rem !default;
 $h5-fontsize: 1.64rem !default;
