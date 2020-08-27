@@ -1,4 +1,4 @@
-import React, {useState, useCallback, useEffect} from 'react';
+import React, {useState} from 'react';
 import {fireBase} from "../../config/firebaseConfig";
 import {Input, Label} from "reactstrap";
 
@@ -13,16 +13,7 @@ const NewExercise = ({addExercise, toggleVisable}) => {
         duration: null
     });
     const db  = fireBase.firestore();
-    const [close, setClose] = useState(false);
-
-    const handleOnKeyEsc = (e) => {
-        if (e.key === 'Escape') {
-            // escape
-            e.preventDefault();
-            setClose(prevState => !prevState);
-        }
-    };
-
+    // const [close, setClose] = useState(false);
 
     const handleChange = ({name, value}) => {
         setExercise(prevState => ({

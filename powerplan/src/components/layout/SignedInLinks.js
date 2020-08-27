@@ -10,7 +10,7 @@ const SignedInLinks = () => {
 
     return (
         <ul className={'navList'}>
-            <li> <NavLink to={'/'}> Home </NavLink> </li>
+            <li> <NavLink to={'/home'}> Home </NavLink> </li>
             <li> <NavLink to={'/newPlan'}> New Plan </NavLink> </li>
             <li> <div className={'logout'} onClick={e => logOut(e)} > Log Out </div> </li>
             <li> <NavLink to={'/dashboard'} className={'avatar'}> <i className="fa fa-lg fa-user" aria-hidden="true"></i> {user.email}</NavLink> </li>

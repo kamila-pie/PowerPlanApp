@@ -1,3 +1,17 @@
+_Instrukcje_
+Witaj w aplikacji PowerPlan. 
+Mam nadzieję, że mój projekt pomoże Ci planować trening, ćwiczyć regularnie i z większą radością monitorować postępy. 
+Aplikacja wciąż znajduje się w fazie testów i dopracowywania, więc mogą pojawiać się błędy. 
+Jeśli natrafisz na któryś z nich - daj mi znać. Uwagi na temat potencjalnie przydatnych, nowych funkcjonalności równiez są mile widziane!
+
+_Jak zacząć?_
+U górze ekranu znajduje się menu, za pomocą którego możesz nawigować do innych części aplikacji.
+
+_Gotowy na pierwszy trening?_
+Mam nadzieję, że aplikacja okaże się łatwa i przyjemna w użyciu. 
+A teraz przejdź do swoich treningów i zmierz się ze swoją pierwszą rozpiską!
+
+--------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { FacebookLoginButton, GoogleLoginButton } from "react-social-login-buttons";
+// import { FacebookLoginButton, GoogleLoginButton } from "react-social-login-buttons";
 import { fireBase } from '../../config/firebaseConfig';
 import history from "../../config/history";
 

@@ -12,6 +12,7 @@ import NewPlan from "../plans/NewPlan";
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min.js";
 
+
 const App = () => {
     return (
         <Router history={ history }>
@@ -21,7 +22,7 @@ const App = () => {
                     <Switch>
                         <Route exact path={'/dashboard'} component={Dashboard}/>
                         <Route path={'/plan/:id'} component={PlanDetalis}/>
-                        <Route path={'/'} component={Home}/>
+                        <Route path={'/home'} component={Home}/>
                         <Route path={'/login'} component={Login}/>
                         <Route path={'/register'} component={Register}/>
                         <Route path={'/newPlan'} component={NewPlan}/>

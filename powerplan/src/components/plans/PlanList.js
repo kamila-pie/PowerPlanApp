@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import PlanSummary from "./PlanSummary";
+// import PlanSummary from "./PlanSummary";
 import {fireBase} from "../../config/firebaseConfig";
 
 
@@ -14,11 +14,13 @@ const PlanList = () => {
     }, []);
 
     return (
-        <ul> {plans.map((el, i) => <li key={i} className={'plansList'}>
+        <div> {plans.map((el, i) => <li key={i} className={'plansList'}>
             Title: {el.title}
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
             Scheduled: {el.date}</li>)}
-        </ul>
+
+        </div>
+
     )
 }
 

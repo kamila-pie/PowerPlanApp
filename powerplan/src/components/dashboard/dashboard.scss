@@ -46,6 +46,7 @@
 .plansList {
   text-align: left;
   padding: 5px;
+  list-style: disc !important;
   &:hover{
     cursor: pointer;
     background: darken($color-deep-grey, 15%);
@@ -60,4 +61,15 @@
   color: $color-deep-grey;
   font-weight: 600;
 }
+
+.color-change-2x {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+}
+
+.color-change-2x{animation:color-change-2x 2s linear infinite alternate both}
+@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}
 
