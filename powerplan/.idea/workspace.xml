@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0413677d-7de1-4695-9719-4a8377f76d4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignedInLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/CreatePlan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/ExerciseItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/ExerciseItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/NewExercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/NewExercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/AddExercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/AddExercise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/NewPlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/NewPlan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/PlanList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/PlanList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/firebaseConfig.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
       <workItem from="1598268834824" duration="15846000" />
       <workItem from="1598437765954" duration="6632000" />
       <workItem from="1598448209838" duration="22826000" />
-      <workItem from="1598524927121" duration="32874000" />
+      <workItem from="1598524927121" duration="37969000" />
     </task>
     <servers />
   </component>

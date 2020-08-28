@@ -6,7 +6,6 @@ import {AuthContext} from "../../config/context";
 import Home from "./Home";
 import PlanDetalis from "../plans/PlanDetails";
 
-
 const Dashboard = ({plans}) => {
     // const {user, logOut, register} = useContext(AuthContext);
     const {user} = useContext(AuthContext);
@@ -23,7 +22,7 @@ const Dashboard = ({plans}) => {
                         <h3> Created Workout Plans</h3>
                         <PlanList plans={plans}/>
                         {/*dodaj okno modalne z szczegółami z-index jest ok, dodawanie do kalendarza*/}
-                        <PlanDetalis/>
+                        {/*<PlanDetalis/>*/}
                     </div>
             </div> ) : (<Home/>)}
         </div>

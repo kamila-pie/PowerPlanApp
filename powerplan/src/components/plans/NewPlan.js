@@ -34,6 +34,10 @@ const NewPlan = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         db.collection('plans').add({...plan});
+        clear();
+    }
+    const clear = () => {
+
     }
 
     return (
@@ -77,3 +81,7 @@ export default NewPlan;
 
                                     // map ((el, i) => <li key={i} className={'listElement'}>
                                     // {el.exercise} {el.series} x {el.repeat}<br/> weight: {el.weight}kg brake: {el.brake}s duration: {el.duration}min</li> )}
+// useEffect(() => {
+//         db.collection("plans").get()
+//             .then(snapshot => snapshot.Od.docChanges.forEach(el => console.log(el.doc.Xe.proto.mapValue.fields)))
+//     }, []);

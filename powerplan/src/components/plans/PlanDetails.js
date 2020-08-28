@@ -10,6 +10,11 @@ const PlanDetalis = () => {
             .then(snapshot => snapshot.docs.forEach(el => setPlans(prevState => ([...prevState, el.data()] ) )))
     }, []);
 
+    useEffect(() => {
+        db.collection("plans").get()
+            .then(snapshot => snapshot.Od.docChanges.forEach(el => console.log(el.doc.Xe.proto.mapValue.fields)))
+    }, []);
+
 
     return (
         <div className="planDetails">

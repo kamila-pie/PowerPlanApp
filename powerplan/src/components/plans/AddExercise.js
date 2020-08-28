@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-// { title: '',
-//     date: '',
-//     exercises: [
-//
-// ]
-
 export class AddExercise extends React.Component {
     constructor(props) {
         super(props);
@@ -38,23 +32,8 @@ export class AddExercise extends React.Component {
                  }
             })
         )
-        // setExerciseInput(prevState => (
-        //     {...prevState, [name]: value }
-        // ))
     }
-    // addExercise = () => {
-    //     console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
-    //     // setExercise(prevState => (
-    //     //     [...prevState, {
-    //     //         name: exerciseInput.exercise,
-    //     //         series: exerciseInput.series,
-    //     //         repeat: exerciseInput.repeat,
-    //     //         weighted: exerciseInput.weighted,
-    //     //         brake: exerciseInput.brake
-    //     //     }]
-    //     // ))
 
-    // }
     handleSubmit = (e) => {
         e.preventDefault();
         // this.props.createPlan(state);
